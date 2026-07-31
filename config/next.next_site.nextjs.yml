@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: nextjs
+label: NextJS
+base_url: ''
+preview_url: ''
+preview_secret: nextjs-drupal
+revalidate_url: ''
+revalidate_secret: nextjs-drupal
+

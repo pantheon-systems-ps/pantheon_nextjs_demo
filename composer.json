@@ -1,0 +1,14 @@
+{
+    "name": "pantheon-systems-ps/pantheon_nextjs_demo",
+    "type": "drupal-recipe",
+    "description": "Configures a Drupal site as the headless backend for a single Next.js front end on Pantheon: content model, JSON:API, OAuth, and the Next.js module wired up.",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/core": ">=10.4",
+        "drupal/next": "^2.1",
+        "drupal/decoupled_router": "^2.0",
+        "drupal/consumers": "^1.24",
+        "drupal/simple_oauth": "^6.1",
+        "drupal/pathauto": "^1.15"
+    }
+}

@@ -1,0 +1,42 @@
+name: 'Pantheon NextJS Demo'
+type: Site
+description: 'Configures a Drupal site for the headless Next.js demo.'
+input:
+  base_url:
+    data_type: string
+    description: 'The base URL of your Next.js site (e.g., ${VIRTUAL_HOST})'
+    constraints:
+      NotBlank: []
+    prompt:
+      method: ask
+      arguments:
+        question: 'What is the base URL of your Next.js site?'
+    default:
+      source: value
+      value: 'http://localhost:3000'
+install:
+  - next
+  - next_jsonapi
+  - decoupled_router
+  - consumers
+  - pathauto
+  - simple_oauth
+  - datetime
+config:
+  strict: false
+  actions:
+    node.type.page:
+      simpleConfigUpdate:
+        third_party_settings:
+          menu_ui:
+            available_menus:
+              - nextjs
+            parent: 'nextjs:'
+    next.next_site.nextjs:
+      simpleConfigUpdate:
+        base_url: '${base_url}'
+        preview_url: '${base_url}/api/draft'
+        revalidate_url: '${base_url}/api/revalidate'
+    system.feature_flags:
+      simpleConfigUpdate:
+        linkset_endpoint: true

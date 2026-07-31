@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_virtual_event
+    - node.type.event
+id: node.event.field_virtual_event
+field_name: field_virtual_event
+entity_type: node
+bundle: event
+label: 'Virtual Event'
+description: 'Check if this is a virtual/online event'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

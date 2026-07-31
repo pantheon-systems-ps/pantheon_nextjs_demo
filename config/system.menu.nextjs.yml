@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: nextjs
+label: 'NextJS Navigation'
+description: 'Navigation menu for NextJS frontend'
+locked: false
