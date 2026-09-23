@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - next.next_site.nextjs
+    - node.type.article
+  module:
+    - next
+id: node.article
+site_resolver: site_selector
+configuration:
+  sites:
+    nextjs: nextjs
+draft_enabled: true
+revalidator: cache_tag
+revalidator_configuration: {  }
