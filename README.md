@@ -26,6 +26,11 @@ box.
   environment.
 - **`nextjs` navigation menu**, with the Page content type wired to use it.
 - **JSON:API** and the `linkset_endpoint` feature flag enabled for decoupled routing.
+- **Preview and revalidation for Page, Article, and Event**: each content type previews on
+  the `nextjs` site and revalidates it with Drupal cache tags when content changes.
+- **`nextjs_preview` role and OAuth scope**, so the front end can read unpublished content
+  for draft preview. The client secret and signing keys carry secrets, so they are set up
+  at install time rather than shipped here.
 
 ## Apply
 

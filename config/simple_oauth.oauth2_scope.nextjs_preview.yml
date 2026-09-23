@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.nextjs_preview
+  module:
+    - simple_oauth
+id: nextjs_preview
+name: nextjs_preview
+description: 'Grants Next.js preview access to unpublished content.'
+grant_types:
+  client_credentials:
+    status: true
+    description: 'Next.js preview via client credentials.'
+umbrella: false
+parent: null
+granularity_id: role
+granularity_configuration:
+  role: nextjs_preview

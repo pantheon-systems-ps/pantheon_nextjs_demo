@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: nextjs_preview
+label: 'Next.js preview'
+weight: 4
+is_admin: false
+permissions:
+  - 'access content'
+  - 'bypass node access'
